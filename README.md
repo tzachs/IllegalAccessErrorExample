@@ -10,7 +10,7 @@ a different class loader, the JVM will throw IllegalAccessError due to violating
 
 ## How to use this example:
 * You must have maven   
-* Clone project:
+* Clone project or Download as zip
 * You should have a directory with the following modules
   * IllegalAccessErrorA
   * IllegalAccessErrorB
