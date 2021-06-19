@@ -1,4 +1,9 @@
 #!/bin/bash
+set -e
+command -v mvn > /dev/null 2>&1 || {
+  echo "Did not find mvn in PATH. Assuming MAVEN is not installed"
+	exit 1
+}
 
 cd IllegalAccessErrorC || exit
 mvn clean install
