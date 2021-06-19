@@ -9,7 +9,8 @@ Since IllegalAccessErrorB is calling a method that has a package private modifie
 a different class loader, the JVM will throw IllegalAccessError due to violating 'runtime package'
 
 ## How to use this example:
-* You must have maven   
+* Run ```./build.sh``` or do the following manaully
+* You must have maven
 * Clone project or Download as zip
 * You should have a directory with the following modules
   * IllegalAccessErrorA
@@ -29,6 +30,7 @@ mvn clean package
 * Run the example by going to the target directory of IllegalAccessErrorA and running the following
 
 ```bash
+cd IllegalAccessErrorA
 java -jar target/IllegalAccessErrorA-1.0-SNAPSHOT-jar-with-dependencies.jar ../IllegalAccessErrorB/target/ usePackagePrivate
 ```
 
@@ -36,5 +38,5 @@ java -jar target/IllegalAccessErrorA-1.0-SNAPSHOT-jar-with-dependencies.jar ../I
 
 ## See more at 
 
-http://stackoverflow.com/questions/14070215/java-lang-illegalaccesserror-tried-to-access-field-concreteentity-instance-from
-https://docs.oracle.com/javase/specs/jvms/se7/html/jvms-5.html#jvms-5.4.4
+* http://stackoverflow.com/questions/14070215/java-lang-illegalaccesserror-tried-to-access-field-concreteentity-instance-from
+* https://docs.oracle.com/javase/specs/jvms/se7/html/jvms-5.html#jvms-5.4.4
